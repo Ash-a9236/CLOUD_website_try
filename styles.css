@@ -2,19 +2,19 @@
 
 /*LIGHT THEME///////////////////////////////////////////////////////////////////////////////////*/
 html[data-theme = "light"] {
-    --H-background-colour : rgb(255, 252, 245);
-    --H-font-colour : rgb(55, 67, 117);
+    --H-main-background-colour : rgb(255, 252, 245);
+    --H-main-font-colour : rgb(55, 67, 117);
 
-    background-color: var(--H-background-colour);
-    color: var(--H-font-colour);
+    --H-card-background-colour : rgb(55, 67, 117);
+    --H-card-font-colour : rgb(255, 252, 245);
 }
 /*DARK THEME///////////////////////////////////////////////////////////////////////////////////*/
 html[data-theme = "dark"] {
-    --H-background-colour : rgb(55, 67, 117);
-    --H-font-colour : rgb(255, 252, 245);
+    --H-main-background-colour : rgb(55, 67, 117);
+    --H-main-font-colour : rgb(255, 252, 245);
 
-    background-color: var(--H-background-colour);
-    color: var(--H-font-colour);
+    --H-card-background-colour : rgb(255, 252, 245);
+    --H-card-font-colour : rgb(55, 67, 117);
 }
 
 /*BODY////////////////////////////////////////////////////////////////////////////////////////*/
@@ -27,9 +27,98 @@ body {
 
     /*set the font to Comfortaa everywhere*/
     font-family: "Comfortaa", serif;
+
+    /*set the colour of the entire document*/
+    background-color: var(--H-main-background-colour);
+    color: var(--H-main-font-colour);
+}
+p {
+    padding: 15px, 20px;
 }
 
 /*BUTTONS/////////////////////////////////////////////////////////////////////////////////////*/
+button {
+    display: block;
+    width: 200px;
 
+    border: none;
+    /*margin: 20px 20px;*/
+    padding: 25px, 20px;
+    text-align: center;
+    text-decoration: none;
 
+    color: var(--H-card-font-colour);
+    background-color: var(--H-card-background-colour);
+}
+
+/*NAV BAR/////////////////////////////////////////////////////////////////////////////////////*/
+nav {
+    display: flex;
+    background-color: var(--H-card-background-colour);
+    
+    border-radius: 30px;
+    padding: 15px 20px;
+    margin: 0 auto;
+    width: 75%;
+
+    justify-content: space-around;
+    align-items: space-between;
+    
+    position: fixed;
+    top: 15px;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+.menu {
+    display: flex;
+    list-style-type: none;
+    
+    margin: 0;
+    padding: 0;
+}    
+.item {
+    margin: 0 15px;
+}
+.item a {
+    text-decoration: none;
+    color: var(--H-card-font-colour);
+    font-weight: bold;
+}
+
+/*HERO////////////////////////////////////////////////////////////////////////////////////////*/
+.HeroSection {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url(https://i.pinimg.com/736x/46/37/e8/4637e87b1fbfc01a173b48229d6e6aca.jpg);
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.heroText {
+    text-align: center;
+    margin-top: 2px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    color: var(--H-card-font-colour);
+}
+
+.heroText h2 {
+    font-size: 60px;
+}
+.heroText p {
+    font-size: 30px;
+}
 

@@ -22,38 +22,25 @@
         <!--NAVIGATION BAR---------------------------------------------------------------------------->
         <nav>
             <ul class = "menu">
-                <li class = "item">
-                    <a href="HOME_PAGE.html">HOME</a>
-                </li>
-                <li class = "item">
-                    <a href="">AROUND THE WORLD</a>
-                </li>
-                <li class = "item">
-                    <a href="">FORMATION</a>
-                </li>
-                <li class = "item">
-                    <a href="">WEATHER</a>
-                </li>
+                <li class = "item"><a href="HOME_PAGE.html">HOME</a></li>
+                <li class = "item"><a href="">AROUND THE WORLD</a></li>
+                <li class = "item"><a href="">FORMATION</a></li>
+                <li class = "item"><a href="">WEATHER</a></li>
             </ul>
 
-            <button>LIGHT 🌔</button>
-            <button>DARK 🌘</button>
+            <button onclick="document.documentElement.setAttribute('data-theme', 'light');">LIGHT 🌔</button>
+            <button onclick="document.documentElement.setAttribute('data-theme', 'dark');">DARK 🌘</button>
         </nav>
     </heading>
 
     <!--SECTION 01 : HERO IMAGE & HEADLINE-------------------------------------------------------->
-    <div class = "HeroSection">
-        <img id = "heroImage" 
-        src="https://i.pinimg.com/736x/46/37/e8/4637e87b1fbfc01a173b48229d6e6aca.jpg" 
-        alt="An image of a cloud outlined in white"
-        class="center">
-
+    <section class = "HeroSection">
         <div class = "heroText">
             <h2>FINDING CLOUDS</h2>
             <p>find your clouds</p>
             <button>CLOUD</button>
         </div>
-    </div>
+    </section>
 
     <!--SECTION 02 : INTRODUCTION----------------------------------------------------------------->
     <div class = "Introduction">
