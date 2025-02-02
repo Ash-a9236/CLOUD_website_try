@@ -122,3 +122,17 @@ nav {
     font-size: 30px;
 }
 
+/*CARD////////////////////////////////////////////////////////////////////////////////////////*/
+card {
+    display: block;
+    width: 200px;
+
+    border: none;
+    /*margin: 20px 20px;*/
+    padding: 25px, 20px;
+    text-align: center;
+    text-decoration: none;
+
+    color: var(--H-card-font-colour);
+    background-color: var(--H-card-background-colour);
+}
